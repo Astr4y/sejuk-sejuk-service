@@ -8,8 +8,8 @@ It helps admins assign service orders (tickets) to technicians, while technician
 The app has three main parts:
 
 - Home Page – entry point with options to log in as Admin or Technician.
-- Admin Portal – create and assign service orders, track job progress.
-- Technician Portal – view assigned tasks, update job status, upload proof (images).
+Module 1 - Admin Portal – create and assign service orders, track job progress.
+Module 2 - Technician Portal – view assigned tasks, update job status, upload proof (images).
 
 ⚙️ Tech Stack
 
