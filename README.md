@@ -1,3 +1,74 @@
+Sejuk-Sejuk Service Web App ( https://sejuk-sejuk-service-1.web.app/ )
+
+📖 Overview
+
+Sejuk-Sejuk Service is a web-based service management system for an air-conditioning service company.
+It helps admins assign service orders (tickets) to technicians, while technicians can view, update, and complete assigned tasks in real time.
+
+The app has three main parts:
+
+- Home Page – entry point with options to log in as Admin or Technician.
+- Admin Portal – create and assign service orders, track job progress.
+- Technician Portal – view assigned tasks, update job status, upload proof (images).
+
+⚙️ Tech Stack
+
+- Frontend: React.js
+- Routing: React Router
+- Auth & Database: Firebase Authentication & Firestore
+- Image Upload: Cloudinary
+- Hosting: Firebase Hosting
+
+🚀 Features
+
+- Secure login for Admins and Technicians (Firebase Auth).
+> Admin 
+~email : admin@sejuk.com
+~password : adminsejuk
+
+>technician
+~email : technician@sejuk.com
+~password : techniciansejuk
+
+- Admin dashboard to create and assign service tickets.
+- Technician dashboard to view and update assigned tasks.
+- Real-time updates with Firestore.
+- Image upload support via Cloudinary.
+- Role-based navigation with a shared Navbar.
+
+🔥 Challenges & Learnings
+
+- Firebase Storage billing issue - switched to Cloudinary for image uploads.
+- UI/UX design was tricky - needed to make it simple but functional.
+- Ensuring real-time task updates between Admin and Technician portals.
+
+💡 Assumptions
+
+- Only two roles: Admin and Technician.
+- Admin manages orders; technicians can only update their own tasks.
+- Accounts are added manually in Firebase Authentication (email & password).
+
+🎯 Future Improvements
+
+- Add notifications (email/WhatsApp) for new assignments/Completed job.
+- Improve UI with dashboards and progress tracking.
+- Generate reports for completed tasks.
+- Add more roles.
+
+📝 Optional Self-Assessment
+
+Which part was easiest?
+
+The easiest part for me was designing the project flow and logic. Specifically, how the admin creates a ticket/order and assigns it to a technician, and how the technician can view their assigned tasks, complete them, and report updates. The workflow from both perspectives felt clear and straightforward to implement.
+
+Any parts you skipped or need help with?
+
+I skipped setting up Firebase Storage because I had issues with the billing setup. Instead, I switched to using Cloudinary for image uploads. I also need more help with UI design, as I’m not very confident in making the website look modern or visually appealing. Another challenge I faced was linking the admin and technician dashboards so that both sides receive real-time updates on task status.
+
+In a real project, which area are you most confident handling?
+
+I feel most confident in planning and managing the project flow, what the users will see, how the system should behave, and setting up the base structure of the project. I can design a clear workflow for different user roles (admin and technician) and ensure the main functionality works as expected.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
