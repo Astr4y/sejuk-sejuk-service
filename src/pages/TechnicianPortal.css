@@ -1,0 +1,177 @@
+.tech-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+.center {
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.tech-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 16px;
+}
+.tech-select select {
+  padding: 6px 8px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.orders-table th,
+.orders-table td {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  word-wrap: break-word;
+}
+.orders-table th {
+  background: #f9fafb;
+}
+
+.linklike {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #2563eb;
+  cursor: pointer;
+  text-decoration: underline;
+  font: inherit;
+}
+
+.pre {
+  white-space: pre-wrap;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 50;
+}
+
+.modal {
+  background: #fff;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header,
+.modal-footer {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.modal-footer {
+  border-top: 1px solid #e5e7eb;
+  border-bottom: none;
+}
+
+.modal-body {
+  padding: 16px;
+  max-height: 75vh;
+  overflow: auto;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 18px;
+  float: right;
+  cursor: pointer;
+}
+
+.grid.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.field label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.field input[type="number"],
+.field select,
+.field textarea {
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+.field textarea {
+  min-height: 80px;
+}
+
+.file-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 6px;
+  margin-top: 8px;
+}
+.file-item a {
+  color: #2563eb;
+  word-break: break-word;
+}
+
+.uploading {
+  font-size: 0.9rem;
+  color: #374151;
+  margin-top: 6px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 6px;
+}
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-secondary {
+  background: #e5e7eb;
+  color: #111827;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-primary:disabled {
+  opacity: 0.7;
+  cursor:
+}
